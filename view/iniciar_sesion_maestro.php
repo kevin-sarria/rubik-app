@@ -1,12 +1,8 @@
-
-
-
-
 <!-- Esta Clase la creo para centrar el formulario con display flex -->
 <div class="centrar-flex">
     <div class="formulario__caja">
 
-         <div class="contenedor__regresar">
+         <div class="contenedor__regresar centrar-flex">
             <a href="../"><img src="../img/x.png" alt="Icon exit"></a>
         </div>
 

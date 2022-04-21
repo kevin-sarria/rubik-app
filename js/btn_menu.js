@@ -2,8 +2,14 @@
 
 let menu_smart = document.querySelector('.navegacion__links');
 let btn_menu = document.querySelector('.icon-menu');
-let btn_cerrar_menu = document.querySelector('#btn_cerrar');
 
+
+window.setInterval( ()=> {
+    if(window.screen.width >= 1024) {
+        menu_smart.classList.remove('active');
+        enableScroll();
+    }
+}, 500 )
 
 btn_menu.addEventListener('click', () => {
     
