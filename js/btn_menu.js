@@ -5,7 +5,7 @@ let btn_menu = document.querySelector('.icon-menu');
 
 
 window.setInterval( ()=> {
-    if(window.screen.width >= 1024) {
+    if(document.documentElement.scrollWidth >= 1024) {
         menu_smart.classList.remove('active');
         enableScroll();
     }
