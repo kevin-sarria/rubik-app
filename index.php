@@ -2,8 +2,6 @@
 
 include('includes/header.php');
 
-include('view/contenido_inicio.php');
-
 ?>
 
 <section class="contenedor__inicio">
