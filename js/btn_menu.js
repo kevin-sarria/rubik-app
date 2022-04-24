@@ -1,7 +1,7 @@
 'use strict'
 
 let menu_smart = document.querySelector('.navegacion__links');
-let btn_menu = document.querySelector('.icon-menu');
+let btn_menu = document.querySelector('.contenedor-menu');
 
 
 window.setInterval( ()=> {

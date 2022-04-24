@@ -1,0 +1,66 @@
+create database Rubyk;
+
+
+create table alumno(
+Id int primary key auto_increment,
+Nombre varchar(30) not null,
+Apellidos varchar(40) not null,
+esc_prev varchar(40) not null,
+Curp varchar (18) not null,
+Grupo char (2) not null,
+fecha_nacimiento date default "00/00/0000" not null,
+fecha_ingreso date default "00/00/0000",
+fecha_egreso date default "00/00/0000");
+
+create table Cuenta_Alum(
+Id_alumn  int primary key auto_increment, 
+email varchar(40) not null,
+contraseña varchar(40) not null)
+
+
+create table profesor(
+Prof_id int primary key auto_increment,
+Nombre_prof varchar(30) not null,
+Apellidos_prof varchar(40) not null,
+matricula varchar (20) not null,
+fecha_contratatcion date default "00/00/0000");
+
+create table cuenta_prof(
+Id_prof int primary key auto_increment,
+email varchar(40) not null,
+contraseña varchar(40) not null);
+
+create table registro(
+id_alumn int primary key auto_increment,
+Pagos int not null,
+Examenes int not null);
+
+create table asistencias(
+id int primary key auto_increment,
+Asistencias boolean not null,
+id_alumno varchar(20) not null);
+
+create table modulos(
+examenes int primary key,
+modulo1 boolean not null,
+modulo2 boolean not null,
+modulo3 boolean not null,
+modulo4 boolean not null,
+modulo5 boolean not null,
+modulo6 boolean not null,
+modulo7 boolean not null,
+modulo8 boolean not null,
+modulo9 boolean not null,
+modulo10 boolean not null,
+modulo11 boolean not null,
+modulo12 boolean not null,
+modulo13 boolean not null,
+modulo14 boolean not null,
+modulo15 boolean not null,
+modulo16 boolean not null,
+modulo17 boolean not null,
+modulo18 boolean not null,
+modulo19 boolean not null,
+modulo20 boolean not null,
+modulo21 boolean not null,
+modulo22 boolean not null);

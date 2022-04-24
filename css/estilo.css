@@ -8,6 +8,7 @@
     --blanco: #ffffff;
     --azulContenedor: rgb(229, 230, 218);
     --colorTituloInicio: #B23215;
+    --rojoError: #E11212;
 
     --fuenteParrafos: 'Inter', sans-serif;
     --fuenteTitulos: 'Fjalla One', sans-serif;
@@ -225,6 +226,10 @@ img {
 
 /* Contenido principal inicio */
 
+.contenido__principal {
+    margin-top: 15rem;
+}
+
 .contenedor__inicio {
     margin: 10rem auto;
 }
@@ -324,16 +329,8 @@ img {
 /*------------------------------------------------------------------------------------------------*/
 
 
-
-.centrar-flex {
-    margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .formulario__caja {
-    margin-top: 15rem;
+    margin: 0 auto;
     border-radius: 1rem;
     padding: 3rem;
     width: 40rem;
@@ -428,6 +425,19 @@ img {
     transform: scale(1.1);
 }
 
+
+.alerta {
+    max-width: 80%;
+    color: var(--blanco);
+    padding: 0.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.error {
+    background-color: var(--rojoError);
+}
 
 
 
